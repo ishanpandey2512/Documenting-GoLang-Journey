@@ -1,0 +1,12 @@
+mode: set
+/home/ishan/Desktop/golang1/Connection.go:10.14,14.16 4 0
+/home/ishan/Desktop/golang1/Connection.go:17.2,22.21 6 0
+/home/ishan/Desktop/golang1/Connection.go:14.16,16.3 1 0
+/home/ishan/Desktop/golang1/customer.go:18.54,25.16 4 1
+/home/ishan/Desktop/golang1/customer.go:30.2,30.16 1 1
+/home/ishan/Desktop/golang1/customer.go:25.16,27.3 1 0
+/home/ishan/Desktop/golang1/customer.go:30.16,32.3 1 1
+/home/ishan/Desktop/golang1/customer.go:32.8,32.23 1 1
+/home/ishan/Desktop/golang1/customer.go:32.23,34.3 1 1
+/home/ishan/Desktop/golang1/customer.go:34.8,37.3 1 1
+/home/ishan/Desktop/golang1/customer.go:40.13,43.2 2 0

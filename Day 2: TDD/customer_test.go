@@ -18,9 +18,9 @@ func TestCustom(t *testing.T) {
 		input  []byte
 		output []byte
 	}{
-		{[]byte(`{"Name" : "Ishan", "Age" : 14, "Address" : "India"}`), []byte(`not eligible`)},
-		{[]byte(`{"Name" : "Ishan", "Address" : "India"}`), []byte(`not eligible`)},
-		{[]byte(`{"Name" : "XYZ", "Age" : 21, "Address" : "DNFKLEF"}`), []byte(`{"Name" : "XYZ", "Age" : 21, "Address" : "DNFKLEF"}`)},
+		{[]byte(`{"Name":"Ishan","Age":14,"Address":"India"}`), []byte(`not eligible`)},
+		{[]byte(`{"Name":"Ishan","Address":"India"}`), []byte(`not eligible`)},
+		{[]byte(`{"Name":"XYZ","Age":21,"Address":"DNFKLEF"}`), []byte(`{"Name":"XYZ","Age":21,"Address":"DNFKLEF"}`)},
 	}
 
 	t.Logf("Testing Customer Func Handler")

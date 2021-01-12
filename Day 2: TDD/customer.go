@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"io"
 	"io/ioutil"
 	"log"
@@ -34,7 +33,18 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		io.WriteString(w, "not eligible")
 	} else {
 		// Can use \ (backslash) to ignore " in fmt.sprintf for formatting.
-		io.WriteString(w, fmt.Sprintf("{\"Name\" : \"%s\", \"Age\" : %v, \"Address\" : \"%s\"}", c.Name, c.Age, c.Address))
+		// 1. fmt.Printf
+		//io.WriteString(w, fmt.Sprintf("{\"Name\" : \"%s\", \"Age\" : %v, \"Address\" : \"%s\"}", c.Name, c.Age, c.Address))
+
+		// 2. using simple body.
+		//io.WriteString(w, string(body))
+
+		// 3. using JSON Marshal : (only merges all key value pairs, without spaces and just, in between JSON)
+		jsonData, err := json.Marshal(c)
+		if err != nil {
+			log.Println(err)
+		}
+		io.WriteString(w, string(jsonData))
 	}
 }
 
