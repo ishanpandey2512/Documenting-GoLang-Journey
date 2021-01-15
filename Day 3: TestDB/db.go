@@ -2,7 +2,6 @@ package main
 
 import (
 	"database/sql"
-	"fmt"
 	"log"
 )
 
@@ -23,14 +22,16 @@ type Address struct {
 
 // func getCustomer returns a slice of type Customer as result, for a SQL query into database for id.
 func getCustomer(db *sql.DB, id int) []Customer {
+	var ids []interface{}
 	// When ID == 0, does not exist.
 	query := `SELECT * FROM Customer INNER JOIN Address ON Customer.ID = Address.Cus_ID ORDER BY Customer.ID, Address.Cus_ID;`
 	// If id is given.
 	if id != 0 {
-		query = fmt.Sprintf(`SELECT * FROM Customer INNER JOIN Address ON Customer.ID = Address.Cus_ID WHERE Customer.ID = %v ORDER BY Customer.ID, Address.Cus_ID; `, id)
+		query = `SELECT * FROM Customer INNER JOIN Address ON Customer.ID = Address.Cus_ID WHERE Customer.ID = ? ORDER BY Customer.ID, Address.Cus_ID; `
+		ids = append(ids, id)
 	}
 
-	rows, err := db.Query(query)
+	rows, err := db.Query(query, ids...)
 	if err != nil {
 		panic(err.Error())
 	}
