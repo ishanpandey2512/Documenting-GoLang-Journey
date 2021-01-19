@@ -11,3 +11,4 @@
 1. [Using Go Modules](https://blog.golang.org/using-go-modules)
 2. [SQL Mocks](https://github.com/DATA-DOG/go-sqlmock)
     * [Example code:](https://github.com/DATA-DOG/go-sqlmock/tree/master/examples/orders)
+3. [Go Routing](https://benhoyt.com/writings/go-routing/)
