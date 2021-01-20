@@ -9,8 +9,16 @@
 
 ### Useful Links:
 1. [Using Go Modules](https://blog.golang.org/using-go-modules)
+
 2. [SQL Mocks](https://github.com/DATA-DOG/go-sqlmock)
     * [Example code:](https://github.com/DATA-DOG/go-sqlmock/tree/master/examples/orders)
+
 3. [Go Routing](https://benhoyt.com/writings/go-routing/)
+
 4. [GoLang CILint](https://golangci-lint.run/usage/install/)
    * [Usage:](https://medium.com/better-programming/how-to-improve-code-quality-with-an-automatic-check-in-go-d18a5eb85f09)
+   
+5. [Writing Tests in Postman](https://learning.postman.com/docs/writing-scripts/test-scripts/)
+   * [Testing Status Code Examples](https://learning.postman.com/docs/writing-scripts/script-references/test-examples/#testing-status-codes)
+   * [Testing Response Body](https://learning.postman.com/docs/writing-scripts/script-references/test-examples/#testing-response-body)
+   
