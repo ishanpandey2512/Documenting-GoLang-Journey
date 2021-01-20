@@ -12,3 +12,5 @@
 2. [SQL Mocks](https://github.com/DATA-DOG/go-sqlmock)
     * [Example code:](https://github.com/DATA-DOG/go-sqlmock/tree/master/examples/orders)
 3. [Go Routing](https://benhoyt.com/writings/go-routing/)
+4. [GoLang CILint](https://golangci-lint.run/usage/install/)
+   * [Usage:](https://medium.com/better-programming/how-to-improve-code-quality-with-an-automatic-check-in-go-d18a5eb85f09)
