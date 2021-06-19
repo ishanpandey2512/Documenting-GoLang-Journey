@@ -21,4 +21,6 @@
 5. [Writing Tests in Postman](https://learning.postman.com/docs/writing-scripts/test-scripts/)
    * [Testing Status Code Examples](https://learning.postman.com/docs/writing-scripts/script-references/test-examples/#testing-status-codes)
    * [Testing Response Body](https://learning.postman.com/docs/writing-scripts/script-references/test-examples/#testing-response-body)
+
+6. [Visualising test coverages](https://golangcode.com/how-to-run-go-tests-with-coverage-percentage/)
    
